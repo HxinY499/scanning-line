@@ -1,0 +1,18 @@
+{
+  "name": "react-scanning-line",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint-plugin-react": "^7.37.2"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  }
+}
