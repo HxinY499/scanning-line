@@ -6,12 +6,16 @@ export default class ScanningLine {
     if (!dom) {
       throw new Error("请输入正确的dom");
     }
-    setDomStyle(dom, { position: "relative" });
+    setDomStyle(dom, { position: "relative" }, true);
     this.createScanLine();
   }
 
   createScanLine() {
     const scanlineDom = document.createElement("div");
-    scanlineDom.style.position = "absolute";
+    setDomStyle(scanlineDom, { position: "absolute" });
   }
+
+  start() {}
+
+  pause() {}
 }

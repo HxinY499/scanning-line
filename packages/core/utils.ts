@@ -10,10 +10,11 @@ type PartialStyle = Omit<
   "parentRule" | "length"
 >;
 export function setDomStyle(
-  dom: HTMLElement,
+  domOrSelector: HTMLElement | string,
   style: PartialStyle,
   check = false
 ) {
+  const dom = getDom(domOrSelector);
   if (!dom) {
     console.error("Invalid DOM element provided");
     return;
